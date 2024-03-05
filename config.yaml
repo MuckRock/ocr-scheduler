@@ -1,6 +1,6 @@
 title: OCR Scheduler
-description: This is an updated simple test add-on
-instructions: This is a sample instruction.
+description: Run your favorite OCR Add-On on large sets of documents on a schedule. 
+instructions: ''
 type: object
 documents: []
 properties:
