@@ -1,5 +1,5 @@
 title: OCR Scheduler
-description: Run your favorite OCR Add-On on large sets of documents on a schedule. 
+description: Run your favorite OCR Add-On on large sets of documents on a schedule. Premium OCR tools such as Azure and Google do require AI credits to run successfully.  
 instructions: ''
 type: object
 documents: []
@@ -35,5 +35,5 @@ eventOptions:
     - daily
     - weekly
 categories: 
-  - premium
+  - extract
 version: 2
