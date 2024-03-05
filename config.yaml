@@ -20,10 +20,6 @@ properties:
     title: "Project ID"
     type: integer
     description: "Project ID of the project you would like to run this on." 
-  to_tag:
-    title: "Tag OCR'd documents?"
-    type: boolean
-    description: "If selected, the key/value pair of ocr_engine:azure will be added to the document as metadata"
 required:
   - batch_size
   - project_id

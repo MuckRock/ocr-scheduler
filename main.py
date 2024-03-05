@@ -12,7 +12,6 @@ class Scheduler(AddOn):
         """ Runs the selected OCR engine on a batch of documents """
         batch_size = self.data.get("batch_size")
         project_id = self.data.get("project_id")
-        to_tag = self.data.get("to_tag", False)
         ocr_engine = self.data.get("ocr_engine")
         batch_num = 1
 
@@ -38,7 +37,7 @@ class Scheduler(AddOn):
                 json={
                     "addon": run_id,
                     "parameters": {
-                        "to_tag": to_tag
+                        "to_tag": True
                     },
                     "documents": doc_ids,
                     "dismissed": True,
