@@ -21,6 +21,8 @@ class Scheduler(AddOn):
             run_id = 542
         if ocr_engine == "doctr":
             run_id = 549
+        if ocr_engine == "textract":
+            run_id = 1026
 
         documents = self.client.documents.search(
             f"+project:{project_id} -data_ocr_engine:*"
