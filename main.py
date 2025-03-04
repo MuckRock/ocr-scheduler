@@ -27,13 +27,14 @@ class Scheduler(AddOn):
         documents = self.client.documents.search(
             f"+project:{project_id} -data_ocr_engine:*"
         )
+        print(project_id)
 
         for i in range(batch_num):
             # Pull out the IDs for a batch of the documents
             doc_ids = [
                 d.id for d in islice(documents, i * batch_size, (i + 1) * batch_size)
             ]
-
+            print(doc_ids)
             self.client.post(
                 "addon_runs/",
                 json={
