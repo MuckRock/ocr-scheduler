@@ -25,7 +25,7 @@ class Scheduler(AddOn):
             run_id = 1026
 
         documents = self.client.documents.search(
-            f"+project:{project_id} -data_ocr_engine:*"
+            f"+project:{project_id} -data_ocr_engine:* +status:success"
         )
         print(project_id)
 
