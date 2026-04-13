@@ -10,6 +10,7 @@ class Scheduler(AddOn):
 
     def main(self):
         """ Runs the selected OCR engine on a batch of documents """
+        self.client.session.headers.update({'User-Agent': 'OCR Scheduler Add-On'})
         batch_size = self.data.get("batch_size")
         project_id = self.data.get("project_id")
         ocr_engine = self.data.get("ocr_engine")
